@@ -1,0 +1,342 @@
+/* General settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #040114; /* Dark theme background */
+    color: white;
+    font-family: 'Fira Code', monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Center the main content with a maximum width */
+.main {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 0;
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+/* Style for active menu item */
+ul li a.active {
+    color: #FFFFFF; /* White color */
+    text-shadow: 0 0 8px #FFFFFF; /* White glow effect */
+    font-weight: bold; /* Keep active link bold */
+}
+
+/* Optional: You can define how inactive links look if you want */
+ul li a {
+    color: white; /* Default color for links */
+    text-decoration: none; /* No underline */
+    font-weight: normal; /* Default normal weight */
+}
+
+/* Make menu items bold on hover */
+ul li a:hover {
+    font-weight: bold;    /* Bold on hover */
+}
+
+.decorative-line {
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Main section styling */
+.main, main {
+    width: 100%;
+    max-width: 800px; /* Consistent max width */
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+h2 {
+    margin: 20px 0;
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: #008000; /* Hacker green? */
+    margin: 10px 0;
+}
+
+.cv-section {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+/* Individual work experience items (company names, roles, etc.) */
+.cv-item {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease; /* Smooth transitions for future interactivity */
+}
+
+.skills-list {
+    padding-left: 20px;
+}
+
+.skills-list li {
+    margin-bottom: 8px;
+    list-style-type: square;
+    color: #008000; /* Hacker green for list items? */
+
+}
+
+.projects-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    align-items: center;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.project p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Responsive adjustments for larger screens */
+@media (min-width: 768px) {
+    .projects-grid {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .project {
+        width: 30%; /* Adjust this value to control spacing between projects */
+    }
+}
+
+/* Style the dropdown menu content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(34, 34, 34, 0.9); /* Adjusted to be slightly transparent */
+    min-width: 100px; /* Slimmer width */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Light shadow */
+    z-index: 1;
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Style the dropdown links */
+.dropdown-content a {
+    color: white; /* Text color inside dropdown */
+    padding: 6px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 16px; /* Slightly smaller font */
+}
+
+/* Change look of dropdown links on hover */
+.dropdown-content a:hover {
+    font-weight: bold; /* Bold when hovering mouse over text */
+}
+
+/* Show the dropdown when the user clicks on the button */
+.dropdown-content.show {
+    display: block;
+}
+
+
+
+.me {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.me img {
+    width: 100%;
+    max-width: 300px; /* Maximum width of the image */
+    height: auto;     /* Ensures the aspect ratio is maintained */
+}
+
+/* General class for large text containers */
+.text-container {
+    max-width: 800px; /* Limit text width */
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+    text-align: justify; /* Align text to justify for better readability */
+}
+
+.highlight1 {
+    color: #008000; /* Possibly just this for the whole name, wrapping all letters still though so they can be quickly changed */
+}
+
+.highlight2 {
+    color: #008000; 
+}
+
+.highlight3 {
+    color: #008000; 
+}
+
+.highlight4 {
+    color: #008000; 
+}
+
+.highlight5 {
+    color: #008000 ; 
+}
+
+/* General form styling */
+form {
+    width: 100%;
+    max-width: 800px;
+    background-color: #0d0d1a; /* Dark background */
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: white;
+    font-size: 1rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #1a1a2b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Fira Code', monospace;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: none; /* Prevents resizing of text areas */
+}
+
+button.submit-btn {
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #008000; /* Hacker green */
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-family: 'Fira Code', monospace;
+    font-weight: bold;
+}
+
+button.submit-btn:hover {
+    background-color: #00cc00;
+}
+
+/* Honeypot (hidden field for bots) */
+.honeypot {
+    display: none;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    form {
+        padding: 15px;
+    }
+    
+    button.submit-btn {
+        font-size: 1rem;
+    }
+}
+
+#contact h1 {
+    margin-bottom: 20px; /* Adds space below the title */
+    text-align: center;   /* Center the title */
+}
+
+#contact p {
+    margin: 20px 0;  /* Adds space above and below the paragraph */
+    text-align: center;   /* Center the paragraph */
+}
+
+#contact form {
+    margin-top: 20px;     /* Adds space between the paragraph and the form */
+    width: 100%; /* Ensures the form stretches to fit the container */
+    max-width: 600px; /* Optional: limits the form's maximum width */
+}
+
+/* Style for the whole scrollbar */
+textarea::-webkit-scrollbar {
+    width: 8px;  /* Width of the scrollbar */
+}
+
+/* Style for the scrollbar track (background) */
+textarea::-webkit-scrollbar-track {
+    background: #222; /* Dark background to match form */
+    border-radius: 10px;
+}
+
+/* Style for the scrollbar thumb (draggable part) */
+textarea::-webkit-scrollbar-thumb {
+    background-color: #333; /* A slightly lighter shade than the track */
+    border-radius: 10px;
+    border: 2px solid #040114; /* Matches form background for a clean look */
+}
+
+/* Style for scrollbar thumb on hover */
+textarea::-webkit-scrollbar-thumb:hover {
+    background-color: #008000; /* Matches 'hacker green' for hover effect */
+}
