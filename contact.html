@@ -36,7 +36,10 @@
             <section id="contact">
                 <h1>/contact</h1>
                 <p>Feel free to reach out!</p>
-                <form id="contactForm" action="/submit_form" method="POST">
+                <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="ad321f7b-cd4a-435d-8acd-cc0c7e6a86e4">
+                    <input type="hidden" name="subject" value="New Contact Form Submission">
+                    <input type="hidden" name="form_name" value="Contact Form">
                     <div class="form-group">
                         <label for="name">Name:</label>
                         <input type="text" id="name" name="name" required>
@@ -49,7 +52,7 @@
                         <label for="message">Message:</label>
                         <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
-    
+                    <input type="hidden" name="redirect" value="https://web3forms.com/success">
                     <!-- Honeypot Field (Hidden from humans) -->
                     <div class="form-group honeypot">
                         <label for="honeypot">Leave this empty:</label>
@@ -64,3 +67,4 @@
     <script src="scripts.js"></script>
 </body>
 </html>
+
