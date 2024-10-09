@@ -60,3 +60,9 @@ form.addEventListener('submit', function(e) {
             }, 3000);
         });
 });
+
+//Fix stale form data
+window.onload = function() {
+    // Reset the form fields when the page loads
+    document.getElementById("form").reset();
+};
