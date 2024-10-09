@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Cyber Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="cv.html">cv</a></li>
+                <li class="dropdown">
+                    <a href="#" id="projectsButton">projects</a>
+                    <ul id="dropdownMenu" class="dropdown-content">
+                        <li><a href="code.html">code</a></li>
+                        <li><a href="cyber.html">cyber</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html" class="active">contact</a></li>
+            </ul>
+        </nav>
+        
+        
+        
+        <div class="decorative-line">
+            <span class="stars">★☆★</span>
+        </div>
+    </header>
+
+<main>
+        <div class="main">
+            <section id="contact">
+                <h1>/contact</h1>
+                <p>Feel free to reach out!</p>
+                <form id="contactForm" action="/submit_form" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+    
+                    <!-- Honeypot Field (Hidden from humans) -->
+                    <div class="form-group honeypot">
+                        <label for="honeypot">Leave this empty:</label>
+                        <input type="text" id="honeypot" name="honeypot">
+                    </div>
+    
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>            </section>
+        </div>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
