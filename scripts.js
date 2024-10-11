@@ -77,7 +77,7 @@ form.addEventListener('submit', function(event) {
     })
     .then(data => {
         alert('Form submitted successfully!');
-        form.reset(); // Optionally reset the form after submission
+        //form.reset(); // Optionally reset the form after submission
     })
     .catch(error => {
         alert('There was an error submitting the form.');
