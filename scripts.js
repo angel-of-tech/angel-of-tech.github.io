@@ -69,7 +69,7 @@ form.addEventListener('submit', function(e) {
 });
 
 // Reset form on window load to ensure no stale data remains
-window.onload = function() {
-    form.reset();
-};
+//window.onload = function() {
+    //form.reset();
+//};
 
