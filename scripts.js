@@ -86,9 +86,11 @@ form.addEventListener('submit', function(event) {
 });
 
 //Script 4:
-document.addEventListener("DOMContentLoaded", function() {
-    // Reset the form when the page is loaded to prevent stale data
-    document.getElementById('form').reset();
+window.addEventListener('pageshow', function(event) {
+    if (event.persisted) {
+        // Reset the form if the page is loaded from cache (like when using the back button)
+        document.getElementById('form').reset();
+    }
 });
 
 
