@@ -184,10 +184,11 @@ h3 {
     font-weight: bold; /* Bold when hovering mouse over text */
 }
 
-/* Show the dropdown when the user clicks on the button */
-.dropdown-content.show {
+/* Show the dropdown when the active class is added */
+.dropdown-content.active {
     display: block;
 }
+
 
 
 
@@ -299,7 +300,7 @@ button.submit-btn:hover {
     }
     .text-container {
         min-width: unset;  /* Removes the 400px minimum width */
-        max-width: 110%;   /* Ensures the text container doesn't get too narrow */
+        max-width: 120%;   /* Ensures the text container doesn't get too narrow */
         padding: 15px;     /* Reduces padding on smaller screens */
         text-align: left;  /* Changes from justify to left-align to avoid weird spaces */
         font-size: 1rem;   /* Slightly reduce font size on small screens */
