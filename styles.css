@@ -299,7 +299,7 @@ button.submit-btn:hover {
     }
     .text-container {
         min-width: unset;  /* Removes the 400px minimum width */
-        max-width: 120%;   /* Ensures the text container doesn't get too narrow */
+        max-width: 100%;   /* Ensures the text container doesn't get too narrow */
         padding: 15px;     /* Reduces padding on smaller screens */
         text-align: left;  /* Changes from justify to left-align to avoid weird spaces */
         font-size: 1rem;   /* Slightly reduce font size on small screens */
