@@ -206,6 +206,7 @@ h3 {
 /* General class for large text containers */
 .text-container {
     max-width: 800px; /* Limit text width */
+    min-width: 400px;
     margin: 0 auto;
     padding: 20px;
     line-height: 1.6;
